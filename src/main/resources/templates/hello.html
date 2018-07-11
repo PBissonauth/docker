@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://ww.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Dockerfile inserted</title>
+</head>
+<body>
+
+<form action="/user" method="post">
+Enter your name: <input type="text" name="user">
+<input type="submit" value="Submit">
+</form>
+<br>
+<span>Hi:</span><span th:text="${user}"></span>
+
+
+</body>
+</html>
